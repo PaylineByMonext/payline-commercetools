@@ -1,0 +1,48 @@
+deployAs:
+  - name: processor
+    applicationType: service
+    endpoint: /
+    configuration:
+      standardConfiguration:
+        - key: CTP_PROJECT_KEY
+          description: Commercetools project key
+          required: true
+        - key: CTP_CLIENT_ID
+          description: Commercetools client ID
+          required: true
+        - key: CTP_AUTH_URL
+          description: Commercetools Auth URL
+          required: true
+        - key: CTP_API_URL
+          description: Commercetools API URL
+          required: true
+        - key: CTP_SESSION_URL
+          description: Session API URL
+          required: true
+        - key: CTP_JWKS_URL
+          description: JWKs url
+          required: true
+        - key: CTP_JWT_ISSUER
+          description: JWT Issuer for jwt validation
+          required: true
+        - key: MONEXT_ENVIRONMENT
+          description: Monext environment
+          required: true
+        - key: MONEXT_POINT_OF_SALE_REF
+          description: Monext point of sale reference
+          required: true
+        - key: MONEXT_CAPTURE_TYPE
+          description: Monext capture type
+          required: true
+        - key: RETURN_URL
+          description: Merchant return URL
+          required: true
+      securedConfiguration:
+        - key: MONEXT_API_KEY
+          description: Monext API Key
+          required: true
+        - key: CTP_CLIENT_SECRET
+          description: Commercetools client secret
+          required: true
+  - name: enabler
+    applicationType: assets
