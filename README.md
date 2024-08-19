@@ -1,5 +1,22 @@
 # connect-payment-integration-monext
 
+---
+
+## Table of Content
+
+- [Overview](#overview)
+- [Template Features](#template-features)
+- [Prerequisite](#prerequisite)
+- [Getting started](#getting-started)
+  - [Development of Enabler](./enabler/README.md)
+  - [Development of Processor](./processor/README.md)
+- [Deployment Configuration](#deployment-configuration)
+- [Additional resources for developers](#additional-resources-for-developers)
+- [License](#license)
+- [Contact and support](#contact-and-support)
+
+## Overview
+
 This repository provides a [connect](https://docs.commercetools.com/connect) template for payment integration connector. This boilerplate code acts as a starting point for integration with external payment service provider.
 
 ## Template Features
