@@ -1,6 +1,6 @@
 {
   "name": "payment-integration-monext",
-  "version": "3.0.2",
+  "version": "1.0.0",
   "description": "Payment integration with Monext",
   "main": "dist/server.js",
   "scripts": {
