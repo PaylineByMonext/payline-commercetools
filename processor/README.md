@@ -180,7 +180,7 @@ curl --location 'http://localhost:9000/jwt/token' \
 
 ```
 
-Token can be found in response
+Token can be found in response.
 
 ```
 {"token":"<token>"}
@@ -383,7 +383,7 @@ const body = {
 
 ### GET notifyPayment
 
-Notifies the payment to the processor when the confirmPayment method is not called
+Notifies the payment to the processor when the confirmPayment method is not called.
 
 #### Endpoint
 
@@ -452,7 +452,7 @@ Important: You cannot request to cancel the authorization for a Payment that has
 ##### Capture Payment
 
 - centAmount: Amount in the smallest indivisible unit of a currency. For example, 5 EUR is specified as 500 while 5 JPY is specified as 5.
-- currencyCode: Currency code compliant to [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217)
+- currencyCode: Currency code compliant to [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217).
 
 ```
 
@@ -475,7 +475,7 @@ Important: The amount to capture has to be the full amount.
 ##### Refund Payment
 
 - centAmount: Amount in the smallest indivisible unit of a currency. For example, 5 EUR is specified as 500 while 5 JPY is specified as 5.
-- currencyCode: Currency code compliant to [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217)
+- currencyCode: Currency code compliant to [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217).
 
 ```
 {

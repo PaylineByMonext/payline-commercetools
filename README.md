@@ -32,7 +32,7 @@ This repository provides a [connect](https://docs.commercetools.com/connect) tem
 #### 1. commercetools composable commerce API client
 
 Users are expected to create API client responsible for payment management in composable commerce project. Details of the API client are taken as input as environment variables/ configuration for connect such as `CTP_PROJECT_KEY` , `CTP_CLIENT_ID`, `CTP_CLIENT_SECRET`. For details, please read [Deployment Configuration](./README.md#deployment-configuration).
-In addition, please make sure the API client should have enough scope to be able to manage payment. For details, please refer to [Running Application](./processor/README.md#running-application)
+In addition, please make sure the API client should have enough scope to be able to manage payment. For details, please refer to [Running Application](./processor/README.md#running-application).
 
 #### 2. various URLs from commercetools composable commerce
 
@@ -64,7 +64,7 @@ The connector contains two modules:
 ## Deployment Configuration
 
 In order to deploy your customized connector application on commercetools Connect, it needs to be published. For details, please refer to [documentation about commercetools Connect](https://docs.commercetools.com/connect/concepts)
-In addition, in order to support connect, the tax integration connector template has a folder structure as listed below
+In addition, in order to support connect, the tax integration connector template has a folder structure as listed below:
 
 ```
 ├── enabler
@@ -78,7 +78,7 @@ In addition, in order to support connect, the tax integration connector template
 └── connect.yaml
 ```
 
-Connect deployment configuration is specified in `connect.yaml` which is required information needed for publishing of the application. Following is the deployment configuration used by full ingestion and incremental updater modules
+Connect deployment configuration is specified in `connect.yaml` which is required information needed for publishing of the application. Following is the deployment configuration used by full ingestion and incremental updater modules:
 
 ```
 deployAs:
@@ -131,7 +131,7 @@ deployAs:
     applicationType: assets
 ```
 
-Here you can see the details about the variables in configuration
+Here you can see the details about the variables in configuration:
 
 - `CTP_PROJECT_KEY`: The key of commercetools composable commerce project.
 - `CTP_CLIENT_ID`: The client ID of your commercetools composable commerce user account. It is used in commercetools client to communicate with commercetools composable commerce via SDK. Expected scopes are: `manage_payments` `manage_orders` `view_sessions` `view_api_clients` `manage_checkout_payment_intents` `introspect_oauth_tokens` `manage_customers`.
