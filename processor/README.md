@@ -80,9 +80,9 @@ npm run dev
 
 Some of the services have authentication mechanism.
 
-- `oauth2`: Relies on commercetools OAuth2 server
-- `session`: Relies on commercetools session service
-- `jwt`: Relies on the jwt token injected by the merchant center via the forward-to proxy
+- `oauth2`: Relies on commercetools OAuth2 server.
+- `session`: Relies on commercetools session service.
+- `jwt`: Relies on the jwt token injected by the merchant center via the forward-to proxy.
 
 ### OAuth2
 
@@ -248,8 +248,8 @@ N/A
 
 It returns following attributes in response:
 
-- status: It indicates the health check status. It can be `OK`, `Partially Available` or `Unavailable`
-- timestamp: The timestamp of the status request
+- status: It indicates the health check status. It can be `OK`, `Partially Available` or `Unavailable`.
+- timestamp: The timestamp of the status request.
 - version: Current version of the payment connector.
 - checks: List of health check result details. It contains health check result with various external system including commercetools composable commerce and Monext payment services provider.
 
@@ -364,7 +364,7 @@ It returns following attributes in response:
 
 Considering that the plugin is not currently compatible with Commercetools checkout, we can use the query parameter `paymentReference` for recovering the Cart Id [Using Query Carts and passing `paymentReference` as QueryPredicate](https://docs.commercetools.com/api/projects/carts#query-carts).
 
-Once you have the Cart Id, you can [use the endpoint for Create order from cart](https://docs.commercetools.com/api/projects/orders#create-order-from-cart)
+Once you have the Cart Id, you can [use the endpoint for Create order from cart](https://docs.commercetools.com/api/projects/orders#create-order-from-cart).
 
 ```
 # Payload example for create order from cart
@@ -447,7 +447,7 @@ The request payload is different based on different update operations:
 }
 ```
 
-Important: You cannot request to cancel the authorization for a Payment that has already been captured. [Checkout API documentation](https://docs.commercetools.com/checkout/payments-api)
+Important: You cannot request to cancel the authorization for a Payment that has already been captured. [Checkout API documentation](https://docs.commercetools.com/checkout/payments-api).
 
 ##### Capture Payment
 
